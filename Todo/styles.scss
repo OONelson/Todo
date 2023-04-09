@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  background-image: linear-gradient(to left bottom, #030e4d, #467b8d);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  @media only screen and (max-width: 24em){
+   height: 90vh;
+  }
+  .heading {
+    font-size: 4rem;
+    background-image: linear-gradient(
+      to right bottom,
+      #fff,
+      rgb(252, 221, 183)
+    );
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    padding: 3rem 0 5rem 0;
+    @media only screen and (max-width: 24em){
+    padding: 2.5rem 0;
+  }
+  }
+  .form-control {
+    width: 30rem;
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: #030e4d;
+    font-size: 1.5rem;
+    @media only screen and (max-width: 24em){
+   font-size: 1.3rem;
+   width: 22rem;
+  }
+  @media only screen and (max-width: 17.5em){
+   width: 18rem;
+  }
+  }
+  .list {
+    text-align: center;
+    list-style: none;
+    margin: 6rem 0;
+    @media only screen and (max-width: 24em){
+   margin: 3rem 0;
+  }
+  }
+  .item{
+    background-image: linear-gradient(
+      to right bottom,
+      #fff,
+      rgb(252, 221, 183)
+    );
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    @media only screen and (max-width: 24em){
+   font-size: 1.6rem;
+  }
+  }
+  .form-control-two {
+    @extend .form-control;
+  }
+  .delete{
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+    color: #fff;
+  }
+  .filtered{
+    display: none;
+  }
+}
